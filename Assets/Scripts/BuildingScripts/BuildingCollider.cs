@@ -37,7 +37,6 @@ public class BuildingCollider : MonoBehaviour
     {
         if (_parent.transform.root.gameObject.GetInstanceID() != other.transform.root.gameObject.GetInstanceID())
         {
-
             if (!_rootBuildingColliderScript.BuildingColliders.ContainsKey(name))
                 _rootBuildingColliderScript.BuildingColliders.Add(name, isCollided);
             else
